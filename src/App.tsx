@@ -1,31 +1,32 @@
 // import { useState } from 'react'
 
-import './App.css'
+import "./App.css";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen bg-base-content/60  text-white">
       {/* <div className="h-screen bg-gradient-to-tr"> */}
       {/* <div className="flex flex-col items-center p-4 text-white nav md:flex-row md:justify-between">
         <NavBar />
       </div> */}
 
-      <div className="flex flex-col items-center pt-5 text-center md:flex-row md:justify-center">
+      <div className="flex flex-col items-center  pt-5 text-center md:flex-row md:justify-center">
         <div className="w-32 h-32 md:w-48 md:h-48">
           <img
-            src="/images/200x200v4.png"
+            src="/images/200x200v2.png"
             className="rounded-full shadow-xl"
           />
         </div>
         <div className="mt-4 md:ml-6">
-          <h1 className="text-2xl font-bold md:text-5xl">Nathaniel Mills</h1>
+          <h1 className="text-2xl font-bold backdrop-blur-2xl md:text-5xl">
+            Nathaniel Mills
+          </h1>
           <h2 className="text-xl md:text-3xl">Full Stack Engineer</h2>
         </div>
       </div>
-
-      <div className="divider lg:divider-horizontal"></div>
+     
 
       <div className="flex justify-center mt-5">
         <a
@@ -61,11 +62,38 @@ function App() {
         <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">
           Check out some of these Projects!
         </h1>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          
-        </div>
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"></div>
       </div>
+      
+      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+        <aside>
+        <img
+            src="/images/nmills media_logo Concept 7.png"
+            className="w-25 h-25"
+          />
+          <p>
+            Nate Mills Media DBA.
+            <br />
+            Providing reliable tech since 2025
+          </p>
+        </aside>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Branding</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
     </div>
   );
-};
-export default App
+}
+export default App;
