@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 
 import "./App.css";
-
+import ProjectCard from "./Components/ProjectCard";
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -62,9 +62,17 @@ function App() {
         <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">
           Check out some of these Projects!
         </h1>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"></div>
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        <ProjectCard
+          cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+          title="Nate's Accomplishments and projects that he wants to work on"
+          description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
+          btnTitle="Launch"
+        />
+        </div>
       </div>
-      
+
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
         <aside>
         <img
