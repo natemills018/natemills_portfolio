@@ -66,8 +66,20 @@ function App() {
 
         <ProjectCard
           cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-          title="Nate's Accomplishments and projects that he wants to work on"
+          title="Blog About It!"
           description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
+          btnTitle="Launch"
+        />
+        <ProjectCard
+        cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+        title="Websockets"
+        description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
+        btnTitle="Launch"
+      />
+      <ProjectCard
+          cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+          title="Capstone Project"
+          description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical skills"
           btnTitle="Launch"
         />
         </div>
