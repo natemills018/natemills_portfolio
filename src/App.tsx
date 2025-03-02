@@ -62,7 +62,7 @@ function App() {
         <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">
           Check out some of these Projects!
         </h1>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 
         <ProjectCard
           cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
@@ -79,7 +79,7 @@ function App() {
       <ProjectCard
           cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
           title="Capstone Project"
-          description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical skills"
+          description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical"
           btnTitle="Launch"
         />
         </div>
