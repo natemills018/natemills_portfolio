@@ -26,7 +26,6 @@ function App() {
           <h2 className="text-xl md:text-3xl">Full Stack Engineer</h2>
         </div>
       </div>
-     
 
       <div className="flex justify-center mt-5">
         <a
@@ -62,32 +61,31 @@ function App() {
         <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">
           Check out some of these Projects!
         </h1>
-        <div className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-
-        <ProjectCard
-          cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-          title="Blog About It!"
-          description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
-          btnTitle="Launch"
-        />
-        <ProjectCard
-        cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-        title="Websockets"
-        description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
-        btnTitle="Launch"
-      />
-      <ProjectCard
-          cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-          title="Capstone Project"
-          description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical"
-          btnTitle="Launch"
-        />
+        <div className="grid gap-20sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <ProjectCard
+            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+            title="Blog About It!"
+            description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
+            btnTitle="Launch"
+          />
+          <ProjectCard
+            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+            title="Websockets"
+            description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
+            btnTitle="Launch"
+          />
+          <ProjectCard
+            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+            title="Capstone Project"
+            description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical"
+            btnTitle="Launch"
+          />
         </div>
       </div>
 
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
         <aside>
-        <img
+          <img
             src="/images/nmills media_logo Concept 7.png"
             className="w-25 h-25"
           />
