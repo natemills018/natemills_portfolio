@@ -6,7 +6,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen bg-neutral text-neutral-content">
+    <div className="min-h-screen bg-base-300 shadow-2xl rounded-3xl text-base-content">
       {/* <div className="h-screen bg-gradient-to-tr"> */}
       {/* <div className="flex flex-col items-center p-4 text-white nav md:flex-row md:justify-between">
         <NavBar />
@@ -32,7 +32,7 @@ function App() {
           href="/images/Nate Mills Resume 2025_1.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 text-lg font-semibold text-black transition-transform bg-gray-200 rounded-lg hover:scale-105"
+          className="flex items-center gap-2 px-4 py-2 text-lg font-semibold text-base-content transition-transform bg-success rounded-lg hover:scale-105"
         >
           <img
             src="/images/nmills media_logo Concept 7.png"
@@ -45,7 +45,7 @@ function App() {
         <h1 className="text-3xl font-semibold text-center md:text-4xl">
           About Me
         </h1>
-        <div className="p-5 mt-5 text-center bg-gray-800 rounded-lg shadow-lg md:text-left">
+        <div className="p-5 mt-5 text-center bg-base-300 rounded-lg shadow-lg md:text-left">
           <p className="text-lg md:text-xl">
             My name is Nate Mills! Full stack web developer with a passion for
             tech and learning new frameworks. Proficient in JavaScript,
@@ -67,19 +67,19 @@ function App() {
               cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
               title="Blog About It!"
               description="For this project, I'm using a framework called Astro, it's a front-end based framework that is built with React and is very fast"
-              btnTitle="Launch"
+              btnTitle="Visit"
             />
             <ProjectCard
               cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
               title="House_MD"
               description="Built a custom UI for a Home Status database, using React, TypeScript, Daisyui and Material-UI"
-              btnTitle="Launch"
+              btnTitle="Visit"
             />
             <ProjectCard
               cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
               title="Capstone Project"
               description="For this project, I want to solve an issue that is proposed or something that can realistically show some of my technical skills"
-              btnTitle="Launch"
+              btnTitle="Visit"
             />
           </div>
         </div>

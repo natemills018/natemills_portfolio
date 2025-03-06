@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ cardImageSrc, title, description, btnTitle }: ProjectCardProps) => {
     return (
-      <div className="card w-96 bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+      <div className="card w-96 bg-primary-content shadow-lg transition-all duration-300 hover:shadow-2xl">
         <figure className="relative">
           <img
             src={cardImageSrc}
@@ -20,14 +20,13 @@ const ProjectCard = ({ cardImageSrc, title, description, btnTitle }: ProjectCard
           <h2 className="font-bold text-2xl text-gray-800 tracking-tight mb-2">
             {title}
           </h2>
-          <div className="w-16 h-1 bg-blue-500 mb-4"></div>
-          <p className="text-gray-600 text-base leading-relaxed mb-6">
+          <div className="divider divider-primary mt-1"></div>
+
+          <p className="text-neutral text-base leading-relaxed mb-6">
             {description}
           </p>
           <div className="card-actions">
-            <button className="px-6 py-2 bg-blue-600 text-white rounded-lg 
-              transition-all duration-300 hover:bg-blue-700 focus:ring-2 
-              focus:ring-blue-500 focus:ring-offset-2">
+            <button className="btn-circle btn-info-content">
               {btnTitle}
             </button>
           </div>
