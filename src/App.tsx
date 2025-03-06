@@ -6,7 +6,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="min-h-screen bg-base-content/60  text-white">
+    <div className="min-h-screen bg-neutral text-neutral-content">
       {/* <div className="h-screen bg-gradient-to-tr"> */}
       {/* <div className="flex flex-col items-center p-4 text-white nav md:flex-row md:justify-between">
         <NavBar />
@@ -29,7 +29,7 @@ function App() {
 
       <div className="flex justify-center mt-5">
         <a
-          href="/images/Mills_Nate_Technical_Resume_2025.pdf"
+          href="/images/Nate Mills Resume 2025_1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 text-lg font-semibold text-black transition-transform bg-gray-200 rounded-lg hover:scale-105"
@@ -61,25 +61,27 @@ function App() {
         <h1 className="mb-6 text-3xl font-bold text-center md:text-4xl">
           Check out some of these Projects!
         </h1>
-        <div className="grid gap-20sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <ProjectCard
-            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-            title="Blog About It!"
-            description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
-            btnTitle="Launch"
-          />
-          <ProjectCard
-            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-            title="Websockets"
-            description="For this project, I'm using a framework called Astro, it's a front-end based framework, so it gives me a little more focus on the essentials for front-end development"
-            btnTitle="Launch"
-          />
-          <ProjectCard
-            cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
-            title="Capstone Project"
-            description="For this project,I want to solve an issue that is proposed or something that can realistically show some of my technical"
-            btnTitle="Launch"
-          />
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            <ProjectCard
+              cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+              title="Blog About It!"
+              description="For this project, I'm using a framework called Astro, it's a front-end based framework that is built with React and is very fast"
+              btnTitle="Launch"
+            />
+            <ProjectCard
+              cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+              title="House_MD"
+              description="Built a custom UI for a Home Status database, using React, TypeScript, Daisyui and Material-UI"
+              btnTitle="Launch"
+            />
+            <ProjectCard
+              cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+              title="Capstone Project"
+              description="For this project, I want to solve an issue that is proposed or something that can realistically show some of my technical skills"
+              btnTitle="Launch"
+            />
+          </div>
         </div>
       </div>
 
