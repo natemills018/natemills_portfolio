@@ -51,6 +51,9 @@ function App() {
             tech and learning new frameworks. Proficient in JavaScript,
             TypeScript, React, Express, SQL and Node. I'm focused on finding
             solutions to complex problems, and creating impactful software.
+            I thrive in collaborative environments and enjoy working with teams to
+            bring ideas to life. When I'm not coding, you can find me exploring
+            new technologies, playing video games, or spending time with my family.
           </p>
         </div>
       </div>
