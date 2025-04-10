@@ -73,7 +73,7 @@ function App() {
               btnTitle="Visit"
             />
             <ProjectCard
-              cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
+              cardImageSrc="/images/House_Cure Living Room Card.png"
               title="House_MD"
               description="Built a custom UI for a Home Status database, using React, TypeScript, Daisyui and Material-UI"
               btnTitle="Visit"
