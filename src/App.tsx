@@ -81,7 +81,7 @@ function App() {
             <ProjectCard
               cardImageSrc="/images/Screenshot 2025-02-27 230844.png"
               title="Capstone Project"
-              description="For this project, I want to solve an issue that is proposed or something that can realistically show some of my technical skills"
+              description="For this project, I want to build a full stack application that uses Salesforce and React"
               btnTitle="Visit"
             />
           </div>
