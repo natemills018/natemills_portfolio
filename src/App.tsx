@@ -2,6 +2,7 @@
 
 import "./App.css";
 import ProjectCard from "./Components/ProjectCard";
+import SkillsSection from "./Components/SkillsSection";
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -41,6 +42,7 @@ function App() {
           Professional Resume
         </a>
       </div>
+      <SkillsSection />
       <div className="container px-4 py-10 mx-auto md:px-10">
         <h1 className="text-3xl font-semibold text-center md:text-4xl">
           About Me
