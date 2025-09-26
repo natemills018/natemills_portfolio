@@ -1,41 +1,44 @@
+type ColorType = 'blue' | 'green' | 'purple';
+type LevelType = 'Expert' | 'Advanced' | 'Intermediate' | 'Beginner';
+
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      color: "blue",
+      color: "blue" as ColorType,
       skills: [
-        { name: "React", level: "Expert" },
-        { name: "TypeScript", level: "Advanced" },
-        { name: "JavaScript", level: "Expert" },
-        { name: "HTML/CSS", level: "Expert" },
-        { name: "Tailwind", level: "Advanced" }
+        { name: "React", level: "Expert" as LevelType },
+        { name: "TypeScript", level: "Advanced" as LevelType },
+        { name: "JavaScript", level: "Expert" as LevelType },
+        { name: "HTML/CSS", level: "Expert" as LevelType },
+        { name: "Tailwind", level: "Advanced" as LevelType }
       ]
     },
     {
       title: "Backend", 
-      color: "green",
+      color: "green" as ColorType,
       skills: [
-        { name: "Node.js", level: "Advanced" },
-        { name: "Express", level: "Advanced" },
-        { name: "SQL", level: "Intermediate" },
-        { name: "PostgreSQL", level: "Intermediate" },
-        { name: "REST APIs", level: "Advanced" }
+        { name: "Node.js", level: "Advanced" as LevelType },
+        { name: "Express", level: "Advanced" as LevelType },
+        { name: "SQL", level: "Intermediate" as LevelType },
+        { name: "PostgreSQL", level: "Intermediate" as LevelType },
+        { name: "REST APIs", level: "Advanced" as LevelType }
       ]
     },
     {
       title: "Tools & Others",
-      color: "purple", 
+      color: "purple" as ColorType, 
       skills: [
-        { name: "Git", level: "Advanced" },
-        { name: "VS Code", level: "Expert" },
-        { name: "Figma", level: "Intermediate" },
-        { name: "Linux", level: "Intermediate" },
-        { name: "Docker", level: "Beginner" }
+        { name: "Git", level: "Advanced" as LevelType },
+        { name: "VS Code", level: "Expert" as LevelType },
+        { name: "Figma", level: "Intermediate" as LevelType },
+        { name: "Linux", level: "Intermediate" as LevelType },
+        { name: "Docker", level: "Beginner" as LevelType }
       ]
     }
   ];
 
-  const getColorClasses = (color) => {
+  const getColorClasses = (color: ColorType) => {
     const colorMap = {
       blue: "border-blue-400/30 bg-blue-500/10 text-blue-300",
       green: "border-green-400/30 bg-green-500/10 text-green-300", 
@@ -44,7 +47,7 @@ const SkillsSection = () => {
     return colorMap[color];
   };
 
-  const getLevelColor = (level) => {
+  const getLevelColor = (level: LevelType) => {
     const levelMap = {
       Expert: "text-green-300",
       Advanced: "text-blue-300", 

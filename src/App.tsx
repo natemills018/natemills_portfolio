@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 
 import "./App.css";
-import ProjectCard from "./Components/ProjectCard";
 import SkillsSection from "./Components/SkillsSection";
 import PortfolioBg from "./Components/BackgroundComponent";
 function App() {
@@ -36,7 +35,7 @@ function App() {
           </div>
         </div>
         
-        <style jsx>{`
+        <style>{`
           .pixel-sprite {
             font-size: 1.5rem;
             filter: pixelated;
