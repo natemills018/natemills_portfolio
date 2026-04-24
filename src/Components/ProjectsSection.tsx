@@ -52,9 +52,9 @@ function ProjectCard({ project }: { project: Project }) {
 
 function ProjectsSection() {
   return (
-    <section className="px-6 py-16 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center md:text-4xl mb-12 text-base-content">
+    <section className="px-6 py-6 md:px-8">
+      <div>
+        <h2 className="text-3xl font-bold md:text-4xl mb-6 text-base-content">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,14 +1,18 @@
 import "./App.css";
-import SkillsSection from "./Components/SkillsSection";
 import HeroSection from "./Components/HeroSection";
 import ProjectsSection from "./Components/ProjectsSection";
+import AboutSection from "./Components/AboutSection";
 
 function App() {
   return (
-    <div className="min-h-screen bg-base-100 text-base-content">
+    <div className="min-h-screen bg-base-100 text-base-content flex">
       <HeroSection />
-      <SkillsSection />
-      <ProjectsSection />
+      <div className="flex-1 flex flex-col min-h-screen overflow-y-auto">
+        <main className="flex-1">
+          <ProjectsSection />
+        </main>
+        <AboutSection />
+      </div>
     </div>
   );
 }
