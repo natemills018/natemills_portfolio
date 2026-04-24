@@ -1,22 +1,27 @@
 function PixelDecorations() {
   return (
     <>
-      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-30 -z-10">
-        <div className="pixel-sprite pixel-heart absolute top-4 right-10 animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}>💾</div>
-        <div className="pixel-sprite pixel-star absolute top-20 left-20 animate-pulse" style={{ animationDelay: '1s', animationDuration: '2s' }}>⭐</div>
-        <div className="pixel-sprite pixel-code absolute bottom-10 right-20 animate-bounce" style={{ animationDelay: '2s', animationDuration: '4s' }}>💻</div>
-        <div className="pixel-sprite pixel-rocket absolute top-32 right-32 animate-pulse" style={{ animationDelay: '0.5s', animationDuration: '3s' }}>🚀</div>
-        <div className="pixel-sprite pixel-gear absolute bottom-20 left-10 animate-spin" style={{ animationDelay: '1.5s', animationDuration: '8s' }}>⚙️</div>
+      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20 z-0">
+        <div className="pixel-sprite pixel-heart absolute animate-bounce" style={{ top: '5%', right: '15%', animationDelay: '0s', animationDuration: '3s' }}>💾</div>
+        <div className="pixel-sprite pixel-star absolute animate-pulse" style={{ top: '22%', left: '12%', animationDelay: '1s', animationDuration: '2s' }}>⭐</div>
+        <div className="pixel-sprite pixel-rocket absolute animate-pulse" style={{ top: '38%', right: '20%', animationDelay: '0.5s', animationDuration: '3s' }}>🚀</div>
+        <div className="pixel-sprite pixel-code absolute animate-bounce" style={{ top: '55%', left: '18%', animationDelay: '2s', animationDuration: '4s' }}>💻</div>
+        <div className="pixel-sprite pixel-gear absolute animate-spin" style={{ top: '72%', right: '12%', animationDelay: '1.5s', animationDuration: '8s' }}>⚙️</div>
+        <div className="pixel-sprite absolute animate-pulse" style={{ top: '88%', left: '20%', animationDelay: '2.5s', animationDuration: '3s' }}>🎮</div>
 
-        <div className="pixel-block absolute top-16 left-1/3 w-3 h-3 bg-blue-400 animate-ping" style={{ animationDelay: '3s' }}></div>
-        <div className="pixel-block absolute bottom-16 right-1/4 w-2 h-2 bg-purple-400 animate-pulse" style={{ animationDelay: '2.5s' }}></div>
-        <div className="pixel-block absolute top-24 right-1/3 w-4 h-4 bg-green-400 animate-bounce" style={{ animationDelay: '4s', animationDuration: '3s' }}></div>
+        <div className="pixel-block absolute w-3 h-3 bg-blue-400 animate-ping" style={{ top: '15%', left: '45%', animationDelay: '3s' }}></div>
+        <div className="pixel-block absolute w-2 h-2 bg-purple-400 animate-pulse" style={{ top: '32%', right: '40%', animationDelay: '2.5s' }}></div>
+        <div className="pixel-block absolute w-4 h-4 bg-green-400 animate-bounce" style={{ top: '48%', right: '35%', animationDelay: '4s', animationDuration: '3s' }}></div>
+        <div className="pixel-block absolute w-2 h-2 bg-orange-400 animate-pulse" style={{ top: '65%', left: '40%', animationDelay: '1s' }}></div>
+        <div className="pixel-block absolute w-3 h-3 bg-teal-400 animate-ping" style={{ top: '82%', right: '45%', animationDelay: '3.5s' }}></div>
 
         <div className="floating-pixels absolute inset-0">
-          <div className="pixel-dot absolute w-1 h-1 bg-cyan-400" style={{ top: '10%', left: '15%', animation: 'float 6s ease-in-out infinite' }}></div>
-          <div className="pixel-dot absolute w-1 h-1 bg-pink-400" style={{ top: '30%', right: '25%', animation: 'float 4s ease-in-out infinite 1s' }}></div>
-          <div className="pixel-dot absolute w-1 h-1 bg-yellow-400" style={{ bottom: '40%', left: '30%', animation: 'float 5s ease-in-out infinite 2s' }}></div>
-          <div className="pixel-dot absolute w-1 h-1 bg-red-400" style={{ bottom: '20%', right: '35%', animation: 'float 7s ease-in-out infinite 0.5s' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-cyan-400" style={{ top: '10%', left: '30%', animation: 'float 6s ease-in-out infinite' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-pink-400" style={{ top: '28%', right: '30%', animation: 'float 4s ease-in-out infinite 1s' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-yellow-400" style={{ top: '45%', left: '35%', animation: 'float 5s ease-in-out infinite 2s' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-red-400" style={{ top: '62%', right: '28%', animation: 'float 7s ease-in-out infinite 0.5s' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-lime-400" style={{ top: '78%', left: '32%', animation: 'float 5s ease-in-out infinite 1.5s' }}></div>
+          <div className="pixel-dot absolute w-1 h-1 bg-fuchsia-400" style={{ top: '92%', right: '38%', animation: 'float 6s ease-in-out infinite 3s' }}></div>
         </div>
       </div>
 

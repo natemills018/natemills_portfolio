@@ -23,5 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# Screenshots dropped in root for context
-/Screenshot*.png
+# Screenshots and design references dropped in root for context
+/*.png
+/*.jpg
+/*.jpeg
+
+# ocli project intelligence (local state, not checked in)
+.ocli/
+.fastembed_cache/
