@@ -1,16 +1,17 @@
 import PixelDecorations from "./PixelDecorations";
 import ThemeSelector from "./ThemeSelector";
+import { Badge } from "./Badge";
 
 function HeroSection() {
   return (
-    <aside className="w-full md:w-72 shrink-0 md:h-screen md:sticky md:top-0 border-b md:border-b-0 md:border-r border-base-300 bg-base-200 flex flex-col justify-between p-6 relative overflow-hidden">
+    <aside className="w-full md:w-72 shrink-0 md:h-screen md:sticky md:top-0 border-b md:border-b-0 md:border-r border-base-300 bg-base-200 flex flex-col justify-between gap-6 p-6 relative overflow-hidden">
       <PixelDecorations />
       <div className="relative">
         <div className="flex items-center gap-3 mb-3">
-          <div className="badge badge-warning gap-2">
-            <div className="w-2 h-2 bg-warning-content rounded-full animate-pulse"></div>
+          <Badge variant="warning">
+            <span className="w-2 h-2 bg-warning-content rounded-full animate-pulse" aria-hidden="true"></span>
             Employed
-          </div>
+          </Badge>
           <ThemeSelector />
         </div>
 
@@ -42,6 +43,29 @@ function HeroSection() {
           </a>
         </div>
       </div>
+
+      <nav aria-label="Section navigation" className="relative">
+        <p className="text-xs font-semibold uppercase tracking-wider text-base-content/50 mb-2">
+          Sections
+        </p>
+        <ul className="flex flex-col gap-1">
+          <li>
+            <a href="#projects" className="block rounded-md px-2 py-1.5 text-base text-base-content/80 hover:text-base-content hover:bg-base-300 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-base-content">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#skills" className="block rounded-md px-2 py-1.5 text-base text-base-content/80 hover:text-base-content hover:bg-base-300 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-base-content">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="block rounded-md px-2 py-1.5 text-base text-base-content/80 hover:text-base-content hover:bg-base-300 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-base-content">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
     </aside>
   );
 }

@@ -1,4 +1,8 @@
+import { Card, CardBody, CardTitle } from "./Card";
+import { Badge } from "./Badge";
+
 type LevelType = "Expert" | "Advanced" | "Intermediate" | "Beginner";
+type LevelVariant = "success" | "info" | "warning" | "error";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -34,18 +38,15 @@ const SkillsSection = () => {
     },
   ];
 
-  const getLevelBadge = (level: LevelType) => {
-    const badgeMap = {
-      Expert: "badge-success",
-      Advanced: "badge-info",
-      Intermediate: "badge-warning",
-      Beginner: "badge-error",
-    };
-    return badgeMap[level];
+  const levelVariant: Record<LevelType, LevelVariant> = {
+    Expert: "success",
+    Advanced: "info",
+    Intermediate: "warning",
+    Beginner: "error",
   };
 
   return (
-    <section className="px-6 py-16 md:px-12">
+    <section id="skills" className="px-6 py-16 md:px-12 scroll-mt-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center md:text-4xl mb-12 text-base-content">
           Technologies & Tools
@@ -53,11 +54,11 @@ const SkillsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((category) => (
-            <div key={category.title} className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <div className="card-body">
-                <h3 className="card-title justify-center">
-                  <span className="badge badge-primary badge-lg">{category.title}</span>
-                </h3>
+            <Card key={category.title} className="hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <CardBody>
+                <CardTitle className="justify-center">
+                  <Badge variant="primary" size="lg">{category.title}</Badge>
+                </CardTitle>
 
                 <div className="space-y-3 mt-4">
                   {category.skills.map((skill) => (
@@ -66,14 +67,14 @@ const SkillsSection = () => {
                       className="flex justify-between items-center p-3 bg-base-300 rounded-lg hover:bg-base-100 transition-colors duration-200"
                     >
                       <span className="text-base-content font-medium">{skill.name}</span>
-                      <span className={`badge badge-sm ${getLevelBadge(skill.level)}`}>
+                      <Badge variant={levelVariant[skill.level]} size="sm">
                         {skill.level}
-                      </span>
+                      </Badge>
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
+              </CardBody>
+            </Card>
           ))}
         </div>
       </div>
